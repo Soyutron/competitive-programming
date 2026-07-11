@@ -1,18 +1,17 @@
 #include <iostream>
 
-int main()
-{
-	int N;
-	std::cin >> N;
-	int a = N%10;
-	int b = N/10%10;
-	int c = N/100%10;
+// 1 2 3 4 5
+// 1 1 2 2 3
 
-	std::cout << a << b << c << "\n";
+int main() {
+    int N, M;
+    std::cin >> N >> M;
+    bool isA = (N % 2 == 0 && (N / 2 >= M));
+    bool isB = (N % 2 == 1 && ((N / 2) + 1 >= M));
 
-	if(a==b && b==c){
-		std::cout << "Yes\n";
-	}else{
-		std::cout << "No\n";
-	}
+    if (isA || isB) {
+        std::cout << "Yes\n";
+    } else {
+        std::cout << "No\n";
+    }
 }
