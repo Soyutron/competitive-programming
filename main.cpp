@@ -2,22 +2,17 @@
 
 int main()
 {
-	int year,month,day;
-	std::cin >> year >> month >> day;
-	int date = year*10000 + month*100 + day;
+	int N;
+	std::cin >> N;
+	int a = N%10;
+	int b = N/10%10;
+	int c = N/100%10;
 
+	std::cout << a << b << c << "\n";
 
-	if( 20190501 <= date && date <= 20260710 ){
-		std::cout << "yes\n";
+	if(a==b && b==c){
+		std::cout << "Yes\n";
+	}else{
+		std::cout << "No\n";
 	}
-	else{
-		std::cout << "no\n";
-	}
-
-	// if(2020<=year || (2019==year && 5<=month)){
-	// 	std::cout << "yes\n";
-	// }
-	// else{
-	// 	std::cout << "no\n";
-	// }
 }
