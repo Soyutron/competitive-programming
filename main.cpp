@@ -1,15 +1,12 @@
 #include <iostream>
 
-// 1 2 3 4 5
-// 1 1 2 2 3
-
 int main() {
-    int N, M;
-    std::cin >> N >> M;
-    bool isA = (N % 2 == 0 && (N / 2 >= M));
-    bool isB = (N % 2 == 1 && ((N / 2) + 1 >= M));
-
-    if (isA || isB) {
+    int L, R;
+    std::cin >> L >> R;
+    bool isInvalid = (L == 0 && R == 0) || (L == 1 && R == 1);
+    if (isInvalid) {
+        std::cout << "Invalid\n";
+    } else if (L == 1) {
         std::cout << "Yes\n";
     } else {
         std::cout << "No\n";
