@@ -1,11 +1,13 @@
 #include <iostream>
 
 int main() {
-    int A, B std::cin >> A >> B;
-    int sum = 6;
-    if (A == B) {
-        std::cout << -1 << "\n";
-    } else {
-        std::cout << sum - A - B << "\n";
+    int R;
+    std::cin >> R;
+    if (1 <= R && R <= 99) {
+        std::cout << 100 - R << "\n";
+    } else if (100 <= R && R <= 199) {
+        std::cout << 200 - R << "\n";
+    } else if (200 <= R && R <= 299) {
+        std::cout << 300 - R << "\n";
     }
 }
