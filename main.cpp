@@ -1,18 +1,13 @@
 #include <iostream>
+#include <string>
+#include <vector>
 
 int main() {
-    int A, B, C;
-    std::cin >> A >> B >> C;
-    if (B <= C) {
-        if (A < B || C <= A) {
-            std::cout << "Yes\n";
-            return 0;
-        }
+    std::string S;
+    std::cin >> S;
+    if (S.length() % 5 == 0) {
+        std::cout << "Yes\n";
     } else {
-        if (C <= A && A < B) {
-            std::cout << "Yes\n";
-            return 0;
-        }
+        std::cout << "No\n";
     }
-    std::cout << "No\n";
 }
