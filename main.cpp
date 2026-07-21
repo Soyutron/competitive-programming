@@ -3,11 +3,16 @@
 #include <vector>
 
 int main() {
-    int N;
-    std::cin >> N;
-    while (1 < N) {
-        std::cout << N << ",";
-        N--;
+    int N, X;
+    std::cin >> N >> X;
+    for (int i = 0; i < N; ++i) {
+        int a;
+        std::cin >> a;
+        if (a < X) {
+            X = a;
+            std::cout << 1 << "\n";
+        } else {
+            std::cout << 0 << "\n";
+        }
     }
-    std::cout << 1 << "\n";
 }
