@@ -3,11 +3,11 @@
 #include <vector>
 
 int main() {
-    std::string S;
-    std::cin >> S;
-    if (S.length() % 5 == 0) {
-        std::cout << "Yes\n";
-    } else {
-        std::cout << "No\n";
+    int N;
+    std::cin >> N;
+    while (1 < N) {
+        std::cout << N << ",";
+        N--;
     }
+    std::cout << 1 << "\n";
 }
