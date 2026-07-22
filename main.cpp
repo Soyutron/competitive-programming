@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
-
+//
 int main() {
     std::string S;
     std::cin >> S;
